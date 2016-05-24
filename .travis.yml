@@ -21,7 +21,7 @@ install:
   - conda build .
 script:
   - conda install set_finder --use-local
-  - anaconda login --username eclarke --password $ANACONDA_PW --hostname "${TRAVIS_OS_NAME}.${TRAVIS_JOB_NUMBER}"
+  - "anaconda login --username eclarke --password $ANACONDA_PW --hostname $TRAVIS_OS_NAME.$TRAVIS_JOB_NUMBER"
   - anaconda upload --force $HOME/miniconda/conda-bld/$TRAVIS_OS_NAME-64/*.tar.bz2
 
 
