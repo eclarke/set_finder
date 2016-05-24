@@ -1,0 +1,20 @@
+package:
+  name: set_finder
+  version: 1.0.0
+
+about:
+  home: https://github.com/eclarke/set_finder
+  license: GPL >= 2
+  summary: A modified version of Cliquer for use with SWGA
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - gcc
+
+source:
+  git_url: https://github.com/eclarke/set_finder
+
+
